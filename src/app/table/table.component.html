@@ -1,12 +1,17 @@
 <table>
   <td>
     <tr>
+      <th>#</th>
       <th>Nome</th>
       <th>Città</th>
+      <th></th>
     </tr>
-    <tr *ngFor="let user of users">
+    <tr *ngFor="let user of users ; let i = index" [ngStyle]="{color: user.nome =='Manuel'? 'green' : 'black'}">
+      <td>{{ i + 1 }}</td>
       <td>{{ user.nome}}</td>
       <td>{{ user.citta}}</td>
+      <td><button class="btn btn-danger" (click)="remove(i)">cancella</button></td>
+
     </tr>
   </td>
 </table>

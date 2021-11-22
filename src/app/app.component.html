@@ -72,7 +72,7 @@
   <app-form></app-form>
 
 
-  <app-table [users]="utenti"></app-table>
+  <app-table [users]="utenti" (user)="getUser($event)"></app-table>
 
 
 

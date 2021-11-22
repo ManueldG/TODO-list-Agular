@@ -13,4 +13,10 @@ export class AppComponent {
 
   title = 'primo2';
   val = 0;
+
+  getUser(event: number): void{
+    this.utenti.splice(event,1)
+  }
 }
+
+

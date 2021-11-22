@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -8,10 +8,15 @@ import { Component, OnInit, Input} from '@angular/core';
 export class TableComponent implements OnInit {
 
   @Input() users=[{nome:'',citta:''}];
+  @Output() user = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(){
+  }
+
+  remove(user: any){
+    this.user.emit(user);
   }
 
 }
