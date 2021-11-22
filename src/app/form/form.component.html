@@ -1,7 +1,7 @@
 <p>form works!</p>
 
-<input type="text" class="form-control" placeholder="">
+<input type="text" class="form-control" #nome>
 
-<input type="text" class="form-control" placeholder="">
+<input type="text" class="form-control" #citta>
 
-<button class="btn btn-primary">vai</button>
+<button class="btn btn-primary" (click)="addUser(nome.value,citta.value)">vai</button>

@@ -6,7 +6,7 @@
       <th>Città</th>
       <th></th>
     </tr>
-    <tr *ngFor="let user of users ; let i = index" [ngStyle]="{color: user.nome =='Manuel'? 'green' : 'black'}">
+    <tr *ngFor="let user of users ; let i = index" [ngStyle]="{color: (user.nome =='Manuel' ? 'green' : 'black') }">
       <td>{{ i + 1 }}</td>
       <td>{{ user.nome}}</td>
       <td>{{ user.citta}}</td>

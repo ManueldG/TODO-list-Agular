@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter,Output} from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -15,7 +15,7 @@ export class TableComponent implements OnInit {
   ngOnInit(){
   }
 
-  remove(user: any){
+  remove(user:number){
     this.user.emit(user);
   }
 
