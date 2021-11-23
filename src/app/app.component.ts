@@ -7,11 +7,11 @@ import { Component,EventEmitter} from '@angular/core';
 })
 export class AppComponent  {
 
-  utenti=[{nome:"Manuel",citta:"Roma"},
-          {nome:"Luca",citta:"Torino"},
-          {nome:"Gigi",citta:"Milano"}];
+  utenti=[{nome:"concerto",citta:"Roma"},
+          {nome:"teatro",citta:"Torino"},
+          {nome:"Calcio",citta:"Milano"}];
 
-  title = 'primo2';
+  title = 'TODO list';
   val = 0;
 
 
